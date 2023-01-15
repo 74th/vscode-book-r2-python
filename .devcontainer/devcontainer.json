@@ -9,9 +9,5 @@
   "forwardPorts": [8000],
   "settings": {},
   "postCreateCommand": "poetry install",
-  "extensions": [
-    "ms-python.python",
-    "ms-azuretools.vscode-docker",
-    "humao.rest-client"
-  ]
+  "extensions": ["ms-python.python", "humao.rest-client"]
 }
