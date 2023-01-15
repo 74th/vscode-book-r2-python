@@ -2,16 +2,33 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "launch python",
+      "name": "Launch Flask",
       "type": "python",
       "request": "launch",
       "module": "flask",
-      "env": { "FLASK_APP": "server/api.py", "FLASK_DEBUG": "1" },
+      "env": {
+        "FLASK_APP": "server/api.py",
+        "FLASK_DEBUG": "1"
+      },
       "args": ["run", "--no-debugger", "--no-reload", "--port=8000"],
       "jinja": true,
       "justMyCode": true
+    },
+    {
+      "name": "Docker: Launch Flask",
+      "type": "docker",
+      "request": "launch",
+      "preLaunchTask": "docker-run: debug",
+      "python": {
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/app"
+          }
+        ],
+        "projectType": "flask"
+      }
     }
-
   ],
   "compounds": []
 }
