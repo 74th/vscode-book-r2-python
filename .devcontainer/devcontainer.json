@@ -1,6 +1,14 @@
 {
   "name": "Python 3",
-  "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+
+  // 公式イメージだけを利用する場合
+  // "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+
+  // 自分で構築する Dockerfile を作る場合
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
   "features": {
     "ghcr.io/devcontainers-contrib/features/poetry:1": {}
   },

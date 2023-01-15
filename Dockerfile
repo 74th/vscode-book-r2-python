@@ -1,3 +1,5 @@
+# Dockerfile
+
 # Docker公式のPythonイメージを元にする
 FROM python:3.11-slim
 
@@ -15,5 +17,9 @@ COPY domain ./domain
 COPY memdb ./memdb
 COPY server ./server
 
-# Poetry 経由で
-CMD ["poetry", "run", "flask", "--app=server.api", "--host=0.0.0.0", "--port=8000"]
+# Poetry 経由で Flask を実行する
+CMD ["poetry", "run", \
+  "flask", \
+  "--app=server.api", \
+  "--host=0.0.0.0", \
+  "--port=8000"]
