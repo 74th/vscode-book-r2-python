@@ -10,6 +10,7 @@ class OperationInteractor:
         return self._db.search_unfinished()
 
     def create_task(self, task: Task) -> Task:
+        task["done"] = False
         self._db.add(task)
         return task
 

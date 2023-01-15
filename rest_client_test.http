@@ -1,0 +1,13 @@
+# rest_client_test.http
+
+### タスクの一覧
+GET http://127.0.0.1:8000/api/tasks
+
+### タスクの登録
+POST http://127.0.0.1:8000/api/tasks
+Content-Type: application/json
+
+{"text": "VS Codeのアップデート"}
+
+### タスクの完了
+PATCH http://127.0.0.1:8000/api/tasks/1/done

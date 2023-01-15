@@ -41,8 +41,8 @@ def append_task()-> Task:
 
 
 # タスクを完了にする
-# POST /api/tasks/<タスクのID>/done
-@app.route("/api/tasks/<int:task_id>/done", methods=["POST"])
+# PATCH /api/tasks/<タスクのID>/done
+@app.route("/api/tasks/<int:task_id>/done", methods=["PATCH"])
 def done_task(task_id: int):
     task = op.done_task(task_id)
     return task
