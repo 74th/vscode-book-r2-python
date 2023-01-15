@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "vscode-book-r2-python"
+version = "0.1.0"
+description = ""
+authors = ["Atsushi Morimoto (74th) <site@74th.tech>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
