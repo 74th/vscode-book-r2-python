@@ -1,0 +1,17 @@
+{
+  "name": "Python 3",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/poetry:1": {}
+  },
+
+  "workspaceFolder": "/workspaces/vscode-book-r2-python",
+  "forwardPorts": [8000],
+  "settings": {},
+  "postCreateCommand": "poetry install",
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker",
+    "humao.rest-client"
+  ]
+}

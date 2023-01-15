@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Flask",
+      "name": "launch python",
       "type": "python",
       "request": "launch",
       "module": "flask",
@@ -11,6 +11,7 @@
       "jinja": true,
       "justMyCode": true
     }
+
   ],
   "compounds": []
 }
