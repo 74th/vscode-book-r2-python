@@ -15,7 +15,11 @@
 
   "workspaceFolder": "/workspaces/vscode-book-r2-python",
   "forwardPorts": [8000],
-  "settings": {},
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["ms-python.python", "humao.rest-client"]
+    }
+  },
   "postCreateCommand": "poetry install",
-  "extensions": ["ms-python.python", "humao.rest-client"]
 }
